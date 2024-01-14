@@ -1,0 +1,13 @@
+print("Welcome to the tip calculator!")
+#asks user for total bill proce
+bill = float(input("What is the total bill?\n")) 
+#asks user for how many people in party
+total_people = int(input("How many people are splitting the bill?\n")) 
+#asks user how much they would lke to tip
+tip = float(input("What percentage would you like to tip?\n"))
+#calculate total, including tip
+total = bill + (bill * (tip/100))
+#print (f"Your total is {round(total)}")
+#calculates pricer per person
+price_per_person = total / total_people  
+print (f"Each person shopuld pay: ${round(price_per_person, 2)}")
